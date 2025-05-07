@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Modular + Tailwind</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración opcional de Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#007bff'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans p-6">
+
+  <!-- Navegación -->
+  <nav class="mb-6 space-x-4 text-blue-600 font-medium">
+    <a href="#/" class="hover:underline">Inicio</a>
+    <a href="#/about" class="hover:underline">Acerca de</a>
+    <a href="#/posts" class="hover:underline">Nuevo Post</a>
+  </nav>
+
+  <!-- Punto de montaje -->
+  <div id="app"></div>
+
+  <!-- App -->
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
